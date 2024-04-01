@@ -1,40 +1,30 @@
+#include "macros\addon_defines.hpp"
 class CfgPatches
 {
-	class MM_Bullfrog
+	class ADDON
 	{
-		name="Mesa's Bullfrogs";
+		name="DOGS' Jet/JumpPack Framework";
 		units[]={};
 		weapons[]={};
-		requiredVersion=0.1;
+		requiredVersion=REQ_VERSION;
 		requiredAddons[]={
-			"cba_main"
+			"cba_main",
+			"RPF_base"
 		};
 		authors[]=
         {
-            "Mesa",
+			"Daisy",
+			"Mesa",
             "Outshadow",
-            "Silencer",
-			"Daisy"
+            "Silencer"
         };
     };
 };
-class Extended_PostInit_EventHandlers
-{
-	class fallingHandlerKey
-	{
-		init = "call compile preprocessFileLineNumbers 'fallingDebug_Key.sqf'";
-	};
-	class settings {
-		init = "call compile preprocessFileLineNumbers 'settings.sqf'";
-	};
-};
-class cfgFunctions
-{
-	class MM_Bullfrog // change irrelevent classes
-	{
-		tag = "MM_Bullfrog";
-		class Functions {
-			file = "MM_Bullfrog\functions";
+class CfgFunctions {
+	class PREFIX {
+		tag=STR(PREFIX); // JPF_fnc_ ...
+		class COMPONENT {
+			file="base\functions";
 			class alterEnergy;
 			class customWoundHandler;
 			class hashmapCreate {
@@ -60,7 +50,7 @@ class cfgFunctions
 	class Keys {
 		class KeyInt {
 			class fallingPostInit {
-				file = "MM_Bullfrog\fallingDebug_Key.sqf";
+				file = "base\fallingDebug_Key.sqf";
 				postInit=1;
 			};
 		};
@@ -80,4 +70,3 @@ class CfgVehicles {
 };
 
 #include "ACE_Medical_Injuries.hpp"
-//#include "RscTitles.hpp"
