@@ -1,9 +1,8 @@
-<h1> Mesa's Additions Github Repository </h1>
+<a rel="license" href="https://www.bohemia.net/community/licenses/arma-public-license-share-alike" target="_blank" ><img src="https://data.bistudio.com/images/license/APL-SA.png" ><br>This work is licensed under the Public License Share Alike</a>
 
-Name Pending Change!!!
+<h1> DOGS Additions </h1>
 
-
-This is the repository to host the modularly applicable functions for OPTRE unit mods. These systems should, in theory, work for any unit in any genre of Arma 3, though they may have some issues if OPTRE is not present in the given modlist.
+This repository hosts modularly applicable functions for OPTRE unit mods. These systems should, in theory, work for any unit in any genre of Arma 3, though they may have some issues if OPTRE is not present in the given modlist.
 
 <h2> The systems are categorized into the following groups: </h2>
 
@@ -23,11 +22,11 @@ Each Category has its own intentions, and depending on functional growth, they m
 
 The shield tech is currently only a bubble shield, as seen in Halo 3, and Halo: Reach. This may be expanded upon in the future, depending on scripting hang-ups, as well as time able to be spent on expansion. Some assets are ready to expand the shield systems, though by no means does this guarantee their implementation.
 
-<h2> Camo Tech PENDING REWORK </h2>
+<h2> Camo Tech [<i>Pending Rework</i>] </h2>
 
 The camo tech is intended to be a modular system geared toward allowing infantry of any unit to easily and swiftly swap between a multitude of camo presets made by said unit's mod team. The system is rather simple, and only requires server settings be updated alongside minor config updates. Appropriate textures must also be managed, though the script itself will do the rest of the work.
 
-<h2> Jump Pack Tech PENDING REWORK </h2>
+<h2> Jump Pack Tech [<i>In Progress</i>] </h2>
 
 Jump packs are notoriously hard to get right in most of Arma 3, due to limitations imposed either by the engine or mods used within the engine. To combat this, our systems are intended to be as easy to configure as possible. The only modifications needed to an existing unit mod will be config-based that should not interfere with normal operations.
 
